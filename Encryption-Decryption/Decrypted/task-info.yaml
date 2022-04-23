@@ -1,0 +1,121 @@
+type: edu
+custom_name: Decrypted!
+files:
+- name: src/encryptdecrypt/Main.java
+  visible: true
+  text: |
+    package encryptdecrypt;
+
+    public class Main {
+        public static void main(String[] args) {
+            System.out.println("Hello World!");
+        }
+    }
+  learner_created: false
+- name: test/EncryptDecryptTest.java
+  visible: false
+  text: |
+    import org.hyperskill.hstest.stage.StageTest;
+    import org.hyperskill.hstest.testcase.SimpleTestCase;
+
+    import java.util.List;
+
+    public class EncryptDecryptTest extends StageTest {
+
+        @Override
+        public List<SimpleTestCase> generate() {
+            return List.of(
+                new SimpleTestCase(
+                    "enc\n" +
+                        "Welcome to hyperskill!\n" +
+                        "5",
+                    "\\jqhtrj%yt%m~ujwxpnqq&"),
+                new SimpleTestCase(
+                    "enc\n" +
+                        "Hello\n" +
+                        "0",
+                    "Hello"),
+                new SimpleTestCase(
+                    "enc\n" +
+                        "012345678\n" +
+                        "1",
+                    "123456789"),
+                new SimpleTestCase(
+                    "dec\n" +
+                        "\\jqhtrj%yt%m~ujwxpnqq&\n" +
+                        "5",
+                    "Welcome to hyperskill!"),
+                new SimpleTestCase(
+                    "dec\n" +
+                        "Hello\n" +
+                        "0",
+                    "Hello"),
+                new SimpleTestCase(
+                    "dec\n" +
+                        "222233334444\n" +
+                        "1",
+                    "111122223333")
+            );
+        }
+    }
+  learner_created: false
+- name: src/encryptdecrypt/MessageEncryptorDecryptor.java
+  visible: true
+  text: |
+    package encryptdecrypt;
+
+    import java.util.ArrayList;
+    import java.util.List;
+
+    public class MessageEncryptorDecryptor {
+        static final char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+
+        public void encryptDecryptText(String encryptDecrypt, int key, char[] input) {
+            List<Character> convertedTextWithCommas = new ArrayList<>();
+            char correspondingCharPosition;
+
+            for (char character : input) {
+                int charPosition = new String(alphabet).indexOf(character);
+
+                if (charPosition >= 0) {
+
+                    if (encryptDecrypt.equals("encrypt")) {
+                        if (charPosition + key <= 25) {
+                            correspondingCharPosition = alphabet[charPosition + key];
+                        } else {
+                            correspondingCharPosition = alphabet[charPosition + key - 26];
+                        }
+                    } else {
+                        if (charPosition - key >= 0) {
+                            correspondingCharPosition = alphabet[charPosition - key];
+                        } else {
+                            correspondingCharPosition = alphabet[charPosition - key + 26];
+                        }
+                    }
+
+                    convertedTextWithCommas.add(correspondingCharPosition);
+
+                } else {
+                    convertedTextWithCommas.add(character);
+                }
+
+            }
+
+            removeCommas(convertedTextWithCommas);
+        }
+
+        private void removeCommas(List<Character> convertedTextWithCommas) {
+            String convertedText = convertedTextWithCommas.toString()
+                    .substring(1, 3 * convertedTextWithCommas.size() - 1)
+                    .replaceAll(", ", "");
+
+            System.out.println(convertedText);
+        }
+    }
+  learner_created: true
+feedback_link: https://hyperskill.org/learn/step/5389#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Fri, 08 Apr 2022 15:08:32 UTC
+record: 3
