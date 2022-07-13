@@ -117,6 +117,45 @@ files:
         }
     }
   learner_created: false
+- name: src/encryptdecrypt/MessageEncryptorDecryptor.java
+  visible: true
+  text: |
+    package encryptdecrypt;
+
+    import java.util.ArrayList;
+    import java.util.List;
+
+    public class MessageEncryptorDecryptor {
+
+        public void encryptDecryptText(String operation, int key, char[] input) {
+            List<String> convertedTextWithCommas = new ArrayList<>();
+
+            if ("enc".equals(operation)) {
+                for (char character : input) {
+                    convertedTextWithCommas.add(String.valueOf((char) (character + key)));
+                }
+            } else {
+                for (char character : input) {
+                    convertedTextWithCommas.add(String.valueOf((char) (character - key)));
+                }
+            }
+            // removeCommas(convertedTextWithCommas); // we can do it without this function
+            convertedTextWithCommas.forEach(letter -> System.out.print(letter));
+        }
+
+    // we can do it without this function
+    //    private void removeCommas(List<String> convertedTextWithCommas) {
+    //        String convertedText = convertedTextWithCommas.toString()
+    //                .substring(1, 3 * convertedTextWithCommas.size() - 1)
+    //                .replaceAll(", ", "");
+    //
+    //        System.out.println(convertedText);
+    //    }
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/5391#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 13 Jul 2022 18:06:42 UTC
+record: 5

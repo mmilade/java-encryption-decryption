@@ -33,12 +33,23 @@
       <module name="Encryption-Decryption.Topics-Exception_handling-Executed_blocks.main" target="11" />
       <module name="Encryption-Decryption.Topics-Exception_handling-Theory.main" target="11" />
       <module name="Encryption-Decryption.Topics-Exception_handling-Try-catch_statements.main" target="11" />
+      <module name="Encryption-Decryption.Topics-Files-A_relative_path.main" target="11" />
+      <module name="Encryption-Decryption.Topics-Files-Are_siblings.main" target="11" />
+      <module name="Encryption-Decryption.Topics-Files-Non-existing_location.main" target="11" />
+      <module name="Encryption-Decryption.Topics-Files-Theory.main" target="11" />
+      <module name="Encryption-Decryption.Topics-Files-Сorrect_statements.main" target="11" />
       <module name="Encryption-Decryption.Topics-Generics_and_Object-Boxes_are_not_just_objects.main" target="11" />
       <module name="Encryption-Decryption.Topics-Generics_and_Object-Correct_the_usage_of_non-generic_class.main" target="11" />
       <module name="Encryption-Decryption.Topics-Generics_and_Object-Initialize_an_object_of_a_generic_class.main" target="11" />
       <module name="Encryption-Decryption.Topics-Generics_and_Object-Reusing_code_with_Object.main" target="11" />
       <module name="Encryption-Decryption.Topics-Generics_and_Object-Theory.main" target="11" />
       <module name="Encryption-Decryption.Topics-Generics_and_Object-What_is_a_type.main" target="11" />
+      <module name="Encryption-Decryption.Topics-Hiding_and_overriding-Correctly_overridden_methods.main" target="11" />
+      <module name="Encryption-Decryption.Topics-Hiding_and_overriding-Incorrectly_overridden_methods.main" target="11" />
+      <module name="Encryption-Decryption.Topics-Hiding_and_overriding-Saying_animals.main" target="11" />
+      <module name="Encryption-Decryption.Topics-Hiding_and_overriding-Shapes_area.main" target="11" />
+      <module name="Encryption-Decryption.Topics-Hiding_and_overriding-Statements.main" target="11" />
+      <module name="Encryption-Decryption.Topics-Hiding_and_overriding-Theory.main" target="11" />
       <module name="Encryption-Decryption.Topics-Hierarchy_of_exceptions-Base_class.main" target="11" />
       <module name="Encryption-Decryption.Topics-Hierarchy_of_exceptions-Theory.main" target="11" />
       <module name="Encryption-Decryption.Topics-Interface-Account_Service.main" target="11" />

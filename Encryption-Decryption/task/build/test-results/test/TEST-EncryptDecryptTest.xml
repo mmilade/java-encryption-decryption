@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EncryptDecryptTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-23T20:41:30" hostname="Milads-MBP.broadband" time="0.083">
+<testsuite name="EncryptDecryptTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-13T18:06:42" hostname="Milads-MBP.broadband" time="0.129">
   <properties/>
-  <testcase name="start" classname="EncryptDecryptTest" time="0.083"/>
+  <testcase name="start" classname="EncryptDecryptTest" time="0.129"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 ?[1;31m

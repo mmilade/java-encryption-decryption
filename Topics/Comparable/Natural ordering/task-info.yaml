@@ -1,9 +1,9 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: a.compareTo(b) &gt; 0
-- text: a.compareTo(b) &lt; 0
 - text: a.compareTo(b) == 0
+- text: a.compareTo(b) &lt; 0
+- text: a.compareTo(b) &gt; 0
 message_correct: Congratulations!
 message_incorrect: Incorrect solution
 files:

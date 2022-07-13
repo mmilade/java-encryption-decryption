@@ -16,3 +16,5 @@ content:
 - Hierarchy of exceptions
 - Exception handling
 - Command-line arguments
+- Hiding and overriding
+- Files
